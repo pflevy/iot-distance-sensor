@@ -1,0 +1,47 @@
+.litreDisplay {
+  margin: 10px auto;
+  border-radius: 5px;
+  width: 400px;
+  height: 200px;
+  background-color: rgb(119, 180, 245);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  position: relative;
+  padding: 5px;
+}
+
+.canvas {
+  margin: 10px 15px;
+  background-color: white;
+  border-radius: 5px;
+  padding-left: 0px;
+  grid-column: 1 / 2;
+  grid-row: 1;
+}
+
+.displayLvalue {
+  grid-column: 2/4;
+  grid-row: 1;
+}
+
+.displayValue span {
+  font-family: "Josefin Sans", sans-serif;
+  padding-left: 20px;
+  font-size: 50px;
+  color: white;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+@media (max-width: 700px) {
+  .litreDisplay {
+    width: 90%;
+  }
+
+  .displayValue span {
+    font-size: 70px;
+    bottom: 20px;
+    right: 5px;
+  }
+}
